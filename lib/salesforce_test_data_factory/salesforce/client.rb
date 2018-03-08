@@ -11,7 +11,7 @@ module SalesforceTestDataFactory
       def sobject name
         sobject_describe = @client.describe name
         fields = sobject_describe.fields.select do |f|
-          f.updateable && f.type != "boolean" && f.name != "OwnerId" && (!f.nillable || !f.referenceTo.empty?)
+          f.updateable && f.name != "OwnerId" && (!f.nillable || !f.referenceTo.empty? || f.custom)
         end
         Sobject.new sobject_describe.name, sobject_describe.label, fields
       end
