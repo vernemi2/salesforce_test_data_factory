@@ -94,7 +94,7 @@ module SalesforceTestDataFactory
           @sobject.fields.each do |f|
             body_1 << "#{f.name} = "
             if !f.referenceTo.empty?
-              body_1 << "#{@factory_name}" << f.relationshipName.delete(" ") << ".getDefault(),\n"
+              body_1 << "#{@factory_name}" << f.relationshipName.delete(" ") << ".getDefault().Id,\n"
             else
               puts "Field type: #{f.type}"
               case f.type
