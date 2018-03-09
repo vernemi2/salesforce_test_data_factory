@@ -22,7 +22,7 @@ module SalesforceTestDataFactory
         out << "*/\n"
 
         out << "@IsTest\n"
-        out << "private class #{@name} {\n"
+        out << "public class #{@name} {\n"
         out << "\n"
         out << "#{@line_spaces}static #{@sobject.name} defaultObject;\n"
         out << "#{@line_spaces}static List<#{@sobject.name}> defaultObjects;\n"
