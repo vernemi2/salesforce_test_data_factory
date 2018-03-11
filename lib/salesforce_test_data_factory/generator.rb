@@ -11,18 +11,18 @@ module SalesforceTestDataFactory
       @objects.each do |object|
         sobject = @salesforce.sobject object
         @results << Apex::Class.new(sobject)
+        @results << Apex::ClassXml.new(sobject)
       end
     end
 
     def write path
       @results.each do |r|
-        File.write path + "/#{r.name}.cls", r.create
-        File.write path + "/#{r.name}.cls-meta.xml", r.create_xml_file
+        File.write path + "/#{r.file_name}", r.render
       end
     end
 
     def print
-      @results.each { |r| puts r.create }
+      @results.each { |r| puts r.render }
     end
   end
 end

@@ -4,6 +4,7 @@ PATH
     salesforce_test_data_factory (0.1.0)
       activesupport (~> 5.0.0)
       dotenv
+      mustache (~> 1.0)
       restforce (~> 2.5.3)
 
 GEM
@@ -29,6 +30,7 @@ GEM
     method_source (0.9.0)
     minitest (5.11.3)
     multipart-post (2.0.0)
+    mustache (1.0.5)
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)

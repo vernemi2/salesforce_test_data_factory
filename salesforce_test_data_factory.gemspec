@@ -37,4 +37,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "restforce", "~> 2.5.3"
   spec.add_dependency "dotenv"
   spec.add_dependency "activesupport", "~> 5.0.0"
+  spec.add_dependency "mustache", "~> 1.0"
 end
