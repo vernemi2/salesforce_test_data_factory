@@ -1,19 +1,6 @@
 module SalesforceTestDataFactory
   module Apex
-    class Class < Mustache
-
-      FACTORY_NAME = "TestFactory_".freeze
-      LINE_SPACES = "    "
-
-      def initialize sobject, options={}
-        @sobject = sobject
-        @factory_name = options[:factory_name] || FACTORY_NAME
-        @line_spaces = options[:line_spaces] || LINE_SPACES
-      end
-
-      def name
-        @factory_name + Helper.remove_whitespaces(@sobject.label)
-      end
+    class Class < ClassType
 
       def file_name
         name + ".cls"
