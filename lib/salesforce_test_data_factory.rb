@@ -10,7 +10,7 @@ require "salesforce_test_data_factory/salesforce/sobject"
 require "salesforce_test_data_factory/apex/class_type"
 require "salesforce_test_data_factory/apex/class"
 require "salesforce_test_data_factory/apex/class_xml"
-require "salesforce_test_data_factory/apex/helper"
+require "salesforce_test_data_factory/helper"
 
 module SalesforceTestDataFactory
 end

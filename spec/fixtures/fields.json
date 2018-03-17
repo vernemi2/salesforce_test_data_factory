@@ -1,0 +1,51 @@
+{
+  "fields": [{
+      "name": "ContactId",
+      "referenceTo": ["Contact"],
+      "relationshipName": "Contact",
+      "type": "reference"
+    },
+    {
+      "name": "Test_String__c",
+      "referenceTo": [],
+      "type": "string"
+    },
+    {
+      "name": "Test_Date__c",
+      "referenceTo": [],
+      "type": "date"
+    },
+    {
+      "name": "Test_Datetime__c",
+      "referenceTo": [],
+      "type": "datetime"
+    },
+    {
+      "name": "Test_Email__c",
+      "referenceTo": [],
+      "type": "email"
+    },
+    {
+      "name": "Test_Url__c",
+      "referenceTo": [],
+      "type": "url"
+    },
+    {
+      "name": "Test_Boolean__c",
+      "referenceTo": [],
+      "type": "boolean"
+    },
+    {
+      "name": "Test_Picklist__c",
+      "referenceTo": [],
+      "type": "picklist",
+      "picklistValues": [{
+        "active": true,
+        "defaultValue": true,
+        "label": "New",
+        "validFor": null,
+        "value": "New"
+      }]
+    }
+  ]
+}

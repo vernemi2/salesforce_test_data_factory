@@ -6,7 +6,7 @@ module SalesforceTestDataFactory
 
       def initialize name, label, fields
         @name = name.freeze
-        @label = label.delete " ".freeze
+        @label = Helper.remove_whitespaces(label).freeze
         @fields = fields.freeze
       end
 
