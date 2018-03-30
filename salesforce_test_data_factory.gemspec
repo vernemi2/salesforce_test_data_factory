@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "salesforce_test_data_factory"
   spec.version       = SalesforceTestDataFactory::VERSION
   spec.authors       = ["Michal Verner"]
-  spec.email         = ["michal.verner@sohohouse.com"]
+  spec.email         = ["michal.verner.mv@gmail.com"]
 
   spec.summary       = %q{Salesforce test data apex classes generator.}
   spec.homepage      = ""
