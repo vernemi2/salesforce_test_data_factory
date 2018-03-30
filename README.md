@@ -10,7 +10,7 @@ clone the repository and run `bundle` to install all the dependencies.
 
 Rename `.env.example` file to `.env` and populate with target Salesforce org credentials.
 
-Run: `bin/console` run interactive pry session to try to use the gem. Execute following to generate test factories for Case object in Salesforce.
+Run `bin/console` to start interactive pry session to try the gem. Execute following to generate test factories for Case object in Salesforce.
 
 ```
 generator = SalesforceTestDataFactory::Generator.new "Case"
